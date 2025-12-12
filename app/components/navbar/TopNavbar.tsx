@@ -18,7 +18,7 @@ const TopNavbar: FC = () => {
 	const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
 	return (
-		<header className="w-full bg-white shadow px-6 py-3 flex justify-between items-center relative">
+		<header className="w-full bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center relative">
 			{/* Left Side: Logo + Company Name */}
 			<div className="flex items-center space-x-3">
 				<img src="https://github.com/evilrabbit.png" alt="Company Logo" className="h-8 w-8" />
