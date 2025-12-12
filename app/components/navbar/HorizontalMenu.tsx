@@ -35,14 +35,14 @@ const HorizontalMenu: FC = () => {
 		},
 		{ label: "Products", href: "/products", icon: <Box className="h-4 w-4" /> },
 		{
-			label: "Consulation",
-			href: "/consulation",
-			icon: <Stethoscope className="h-4 w-4" />,
-		},
-		{
 			label: "Patient Data",
 			href: "/patient_data",
 			icon: <Database className="h-4 w-4" />,
+		},
+        {
+			label: "Consulation",
+			href: "/consulation",
+			icon: <Stethoscope className="h-4 w-4" />,
 		},
 	];
 
@@ -81,10 +81,10 @@ const HorizontalMenu: FC = () => {
 				<Link
 					key={item.label}
 					href={item.href}
-					className={`flex items-center px-5 py-3 rounded-md text-base font-medium space-x-6
+					className={`flex items-center px-5 py-3 rounded-md text-base font-medium space-x-2
             ${
 							isActive(item.href)
-								? "bg-yellow-400 text-black"
+								? "bg-yellow-400"
 								: "text-slate-900 hover:bg-slate-100"
 						}`}
 				>
@@ -100,7 +100,7 @@ const HorizontalMenu: FC = () => {
 						className={`flex items-center px-5 py-3 rounded-md text-base font-medium space-x-2
               ${
 								pathname.startsWith("/labtest")
-									? "bg-yellow-400 text-black"
+									? "bg-yellow-400"
 									: "text-slate-900 hover:bg-slate-100"
 							}`}
 					>
@@ -129,7 +129,7 @@ const HorizontalMenu: FC = () => {
 						className={`flex items-center px-5 py-3 rounded-md text-base font-medium space-x-2
               ${
 								pathname.startsWith("/maintenance")
-									? "bg-yellow-400 text-black"
+									? "bg-yellow-400"
 									: "text-slate-900 hover:bg-slate-100"
 							}`}
 					>

@@ -18,11 +18,11 @@ const TopNavbar: FC = () => {
 	const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
 	return (
-		<header className="w-full bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center relative">
+		<header className="w-full bg-white border-b border-gray-200 px-6 h-16 flex justify-between items-center relative">
 			{/* Left Side: Logo + Company Name */}
-			<div className="flex items-center space-x-3">
-				<img src="https://github.com/evilrabbit.png" alt="Company Logo" className="h-8 w-8" />
-				<span className="font-bold text-lg">Company Name</span>
+			<div className="flex items-center space-x-3 h-full">
+				<img src="/topnavbar-logo.jpg" alt="Company Logo" className="h-12.5 w-auto object-contain" />
+				<span className="text-lg">VMI Medical Clinic</span>
 			</div>
 
 			{/* Desktop Menu + Avatar */}
@@ -31,7 +31,7 @@ const TopNavbar: FC = () => {
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
 						<Button variant="ghost" className="p-0 outline-none ring-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0">
-							<Avatar>
+							<Avatar className="h-10 w-10">
 								<AvatarImage src="https://github.com/shadcn.png" alt={userFullName} />
 								<AvatarFallback>
 									{userFullName
@@ -44,11 +44,11 @@ const TopNavbar: FC = () => {
 					</DropdownMenuTrigger>
 
 					<DropdownMenuContent align="end" className="w-64 p-1">
-						<DropdownMenuItem className="p-3 rounded-none border-b hover:bg-muted/50 cursor-pointer">
+						<DropdownMenuItem className="p-3 rounded-none border-b hover:bg-muted/50 cursor-default">
 							<User className="mr-3 h-5 w-5 text-muted-foreground" />
 							<div>
 								<p className="font-medium">{userFullName}</p>
-								<p className="text-xs text-muted-foreground">View profile</p>
+								<p className="text-xs text-muted-foreground">Administrator</p>
 							</div>
 						</DropdownMenuItem>
 						<DropdownMenuItem className="p-3 rounded-none border-b hover:bg-muted/50 cursor-pointer">
