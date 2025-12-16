@@ -1,3 +1,12 @@
-export default function DashboardPage() {
-  return <h1 className="text-3xl font-bold">Dashboard Page</h1>
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+
+export default async function HomePage() {
+	const session = await auth();
+
+	if (!session) {
+		redirect("/login");
+	}
+
+	redirect("/dashboard");
 }

@@ -26,7 +26,7 @@ const HorizontalMenu: FC = () => {
 	const pathname = usePathname();
 
 	const menuItems = [
-		{ label: "Dashboard", href: "/", icon: <Home className="h-4 w-4" /> },
+		{ label: "Dashboard", href: "/dashboard", icon: <Home className="h-4 w-4" /> },
 		{ label: "Store", href: "/store", icon: <Store className="h-4 w-4" /> },
 		{
 			label: "Transaction",
