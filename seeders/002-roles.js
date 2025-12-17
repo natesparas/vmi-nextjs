@@ -17,7 +17,7 @@ module.exports = {
     await queryInterface.bulkInsert(
       "roles",
       roles.map(name => ({
-        id: uuidv4(),
+        role_id: uuidv4(),
         name,
         created_at: now,
         updated_at: now,

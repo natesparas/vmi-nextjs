@@ -1,5 +1,40 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Prerequisites
+
+- Node.js (v20 or higher)
+- PostgreSQL (v16 or higher)
+- Sequelize CLI (v6 or higher)
+
+## Database Setup
+
+1. Create a new database for the application.
+2. Update the database configuration in `config/config.js`.
+
+### Running Database Migration
+To run the database migration, execute the following command:
+
+```bash
+npx sequelize-cli db:migrate
+```
+
+To undo the migration, execute the following command:
+
+```bash
+npx sequelize-cli db:migrate:undo:all
+```
+
+### Running Database Seeders
+To run all seeders:
+```bash
+npx sequelize-cli db:seed:all
+```
+
+To undo the seeders, execute the following command:
+```bash
+npx sequelize-cli db:seed:undo:all
+```
+
 ## Getting Started
 
 First, run the development server:

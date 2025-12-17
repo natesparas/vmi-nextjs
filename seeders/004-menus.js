@@ -17,7 +17,7 @@ module.exports = {
 
     await queryInterface.bulkInsert("menus", [
       {
-        id: dashboardId,
+        menu_id: dashboardId,
         label: "Dashboard",
         path: "/dashboard",
         icon: `<Home className="h-4 w-4" />`,
@@ -27,7 +27,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: storeId,
+        menu_id: storeId,
         label: "Store",
         path: "/store",
         icon: `<Store className="h-4 w-4" />`,
@@ -37,7 +37,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: transactionId,
+        menu_id: transactionId,
         label: "Transaction",
         path: "/transaction",
         icon: `<CreditCard className="h-4 w-4" />`,
@@ -47,7 +47,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: productId,
+        menu_id: productId,
         label: "Products",
         path: "/product",
         icon: `<Box className="h-4 w-4" />`,
@@ -57,7 +57,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: patientsId,
+        menu_id: patientsId,
         label: "Patient Data",
         path: "/patient",
         icon: `<Database className="h-4 w-4" />`,
@@ -67,7 +67,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: consultationId,
+        menu_id: consultationId,
         label: "Consultations",
         path: "/consulation",
         icon: `<Stethoscope className="h-4 w-4" />`,
@@ -77,7 +77,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: labTestId,
+        menu_id: labTestId,
         label: "Laboratory Test",
         path: null,
         icon: `<Stethoscope className="h-4 w-4" />`,
@@ -87,7 +87,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: uuidv4(),
+        menu_id: uuidv4(),
         label: "Hematology Create",
         path: "/labtest",
         parent_id: labTestId,
@@ -96,7 +96,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: maintenanceId,
+        menu_id: maintenanceId,
         label: "File Maintenance",
         path: null,
         icon: `<Settings className="h-4 w-4" />`,
@@ -106,7 +106,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: uuidv4(),
+        menu_id: uuidv4(),
         label: "Category",
         path: "/maintenance/category",
         parent_id: maintenanceId,
@@ -115,7 +115,7 @@ module.exports = {
         updated_at: now,
       },
       {
-        id: uuidv4(),
+        menu_id: uuidv4(),
         label: "Users",
         path: "/maintenance/user",
         parent_id: maintenanceId,

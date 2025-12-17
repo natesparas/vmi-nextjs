@@ -41,7 +41,7 @@ module.exports = {
     await queryInterface.bulkInsert(
       "permissions",
       permissions.map(p => ({
-        id: uuidv4(),
+        permission_id: uuidv4(),
         key: p.key,
         description: p.description,
         created_at: now,
